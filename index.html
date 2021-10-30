@@ -1,207 +1,102 @@
 <!DOCTYPE html>
+<html lang="">
 
-<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Lingyu|与光同尘</title>
+    <meta name="description" content="这里是Lingyu的个人主页">
+    <meta name="keywords" content="风也温柔,个人主页,程序员">
+    <link rel="icon" type="image/ico" href="https://gravatar.loli.net/avatar/4cc893d113dd74ceca73f9863f2c5446/">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
 
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" href="img/Favicon.png" type="image/x-icon">
-		<title>Season</title>
+</head>
 
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/timer.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="css/custom.css">
-	</head>
+<body>
+    <div id="main" class="container">
+        <div class="row my-card justify-content-center">
+            <div class="col-lg-4 photo-bg"></div>
+            <div class="col-lg-8 card">
+                <h1>Hi，我是Lingyu，这里是我的主页！</h1>
+                <p>很荣幸您能访问我的网站！
+                </p>
+                <p>
+                    <br>每颗人间烟火，都不要错过。<br> 
+
+                </p>
+
+                <p>Catch me:</p>
+                <div class="row">
+                    <button id="kaygb-blog" class="btn btn-primary col-lg-4">BLOG</button>
+                    <a href="https://miko.pw" id="kaygb-blog-a" target="_blank" class="btn btn-primary col-lg-4">Homepage</a>
+                    <a href="https://github.com/kaygb/kaygb/tree/master/v3" target="_blank" class="btn btn-secondary col-lg-4">kewu.cc|Blog</a>
+                    <a href="https://napoi.cn" target="_blank" id="kaygb-mail-a" class="btn btn-success col-lg-4">napoi.cn|blog</a>
+                    <button id="kaygb-mail" class="btn btn-success col-lg-4">napoi.cn|blog</button>
+                </div>
 
 
-	<body onload="countdown(year,month,day,hour,minute)">
-		<!-- Carousel -->
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		    <!-- Indicators -->
-		    <ol class="carousel-indicators">
-		        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		        <li data-target="#myCarousel" data-slide-to="1" ></li>
-		        <li data-target="#myCarousel" data-slide-to="2"></li>
-		    </ol>
-		    <div class="carousel-inner">
-		    	<div class= "container timer">
-		    		<div id="home" class= "logo text-center">
-		    			<h1>Season</h1>
-		   			</div>
-			    	<div class= "row timer-circle">
-			    		<div class= "main-text text-center">
-			    			<h2 class="top-text">Season - One Page Responsive</h2>
-			    			<h2 class="sub-text">Coming Soon</h2>
-			    		</div>
-			    		<div class="text-center">
-							<div class="numbers" id="count2"></div>
-						</div>
-						<div class= "col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-							<div class= "circle text-center">
-								<div class= "row" id= "spacer1">
-									<div class= "title"></div>
-									<div class= "numbers" id= "dday"></div>
-								</div>
-								<div class= "row" id= "spacer2">
-									<div class= "title"></div>
-									<div class= "title" id= "days">Day</div>
-								</div>
-							</div>
-							<div class= "circle text-center">
-								<div class= "row" id= "spacer1">
-									<div class= "title"></div>
-									<div class= "numbers" id= "dhour"></div>
-								</div>
-								<div class= "row" id= "spacer2">
-									<div class= "title"></div>
-									<div class= "title" id= "hours">Hr</div>
-								</div>
-							</div>
-							<div class= "circle text-center">
-								<div class= "row" id= "spacer1">
-									<div class= "title"></div>
-									<div class= "numbers" id= "dmin"></div>
-								</div>
-								<div class= "row" id= "spacer2">
-									<div class= "title"></div>
-									<div class= "title" id= "minutes">Min</div>
-								</div>
-							</div>
-							<div class= "circle text-center">
-								<div class= "row" id= "spacer1">
-									<div class= "title"></div>
-									<div class= "numbers" id= "dsec"></div>
-								</div>
-								<div class= "row" id= "spacer2">
-									<div class= "title"></div>
-									<div class= "title" id= "seconds">Sec</div>
-								</div>
-							</div>
-						</div><!-- end of clock -->
-			    	</div><!-- end of timer-circle -->
-		    	</div><!-- end of timer -->
-			    	
-		        <div class="item active">
-		        	<img src="img/summer.jpg" alt="First slide">
-		        	
-					<div class= "carousel-caption caption">
-						<h1>Summer sun, shining brightly</h1>
-					</div>
-		        </div><!-- end of first item -->
-		        <div class="item">
-		          	<img src="img/rainy_season.jpg" alt="Second slide">
-		          	
-					<div class= "carousel-caption caption">
-						<h1>It is time to feel raindrop</h1>
-					</div>
-		        </div><!-- end of second item -->
-		        <div class="item">
-			        <img src="img/winter_season.jpg" alt="Third slide">
-			        
-					<div class= "carousel-caption caption">
-						<h1>Winter begins, Snow in everywhere.</h1>
-					</div>        
-		        </div><!-- end of third item -->
-		    </div>
-		</div><!-- end of carousel -->
+                <h4 class="mt-4">or, keep your eyes on</h4>
+           <!--   <ul class="social mt-1">
+                    <li><a href="https://weibo.com/u/5223004318"><i class="fab fa-weibo " aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/kaygb"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-telegram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-zhihu" aria-hidden="true"></i></a></li>
+                </ul>-->  
+                <footer>
+                    <p>Copyright 2018 - Now <a href="https://napoi.cn" target="_blank">Blog</a> >
+                        <br>Mod by
+                        <a href="https://miko.pw" target="_blank" rel="">Lingyu</a>
+                       
 
-		<div class= "body-content">
-			<!-- subscribe -->
-			<div class= "container subscribe">
-				<div class="row text-center">
-					<div class= "col-lg-6 col-lg-offset-3 subscribe-text">
-						<h3 class= "text-center">Subscribe us</h3>
-						<hr class= "full">
-	                	<p>Welcome to our world of technology</p>
-	                	<br/>
-					</div>
-				</div>
-			</div><!-- end of subscribe -->
-			<div class= "container after-slide">
-				<div class= "row">
-					<div class="col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2 col-sm-12 col-xs-12 text-center">
-						<p class= "after-slide-text">Our website is under construction. We`ll be here soon with our new site.</p>
-					</div>
-				</div>
-				<div class="subscribe-form" >
-					<div class= "row">
-						<div class="input-group margin-bottom-sm col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 text-center">
-						  	<span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
-						  	<input class="form-control" type="text" placeholder="Email address">
-						</div>
-						<div class="input-group col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 text-center form">
-						  	<span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
-						  	<input class="form-control" type="password" placeholder="Password">
-						</div>
-						<div class="input-group margin-bottom-sm col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
-							<button type="button" class="btn btn-info">Subscribe</button>
-						</div>
-					</div>
-				</div>
-			</div><!-- end of after slide part -->
+                    </p>
+                    </p>
 
-	        <!-- share part -->
-	      	<div class="container share">
-				<div class="row text-center">
-					<div class= "col-lg-6 col-lg-offset-3 share-text">
-						<h3 class= "text-center">Stay Connected</h3>
-						<hr class= "full">
-	                	<p>We want to connect people like you.</p>
-	                	<br/>
-					</div>
-				</div>
-			</div>
-			<div class= "container share-icons text-center">
-				<div class= "row text-center">
-					<div class= "col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<ul class="socials-icons col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<li>
-								<a href="#" data-toggle="tooltip" title="Share in Facebook" class="facebook"><i class="fa fa-facebook"></i></a>
-							</li>
-							<li>
-								<a href="#" data-toggle="tooltip" title="Share in Twitter" class="twitter"><i class="fa fa-twitter"></i></a>
-							</li>
-							<li>
-								<a href="#" data-toggle="tooltip" title="Share in Google +" class="google-plus"><i class="fa fa-google-plus"></i></a>
-							</li>
-							<li>
-								<a href="#" data-toggle="tooltip" title="Share in Instagram" class="instagram"><i class="fa fa-instagram"></i></a>
-							</li>
-							<li>
-								<a href="#" data-toggle="tooltip" title="Share in Pinterest" class="pinterest"><i class="fa fa-pinterest"></i></a>
-							</li>
-							<li>
-								<a href="#" data-toggle="tooltip" title="Connect with Skype" class="skype"><i class="fa fa-skype"></i></a>
-							</li>
-						</ul> 
-					</div>
-				</div>
-			</div><!-- end of share part -->
-	    </div><!-- end of body content -->
-		<!-- footer -->
-		<div class="wrapper footer">
-			<div class="container">
-				<div class="row text-center">
-					<div class="name col-lg-2 col-md-2 col-sm-2 col-xs-12 text-center">
-						<h1>Season</h1>
-					</div>
-					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 text-center">
-						<div class="copyright">
-							&copy; Copyright 2014 Theme Wagon.
-						</div>
-					</div>
-					<div class= "col-lg-2 col-md-2 col-sm-2 col-xs-12" id="back-top">
-						<p class= "pull-right"><a href="#home"><span></span>Top</a></p>	
-					</div>	
-				</div><!-- row -->
-			</div>
-		</div><!--end of footer -->
-	</body>
+                </footer>
+            </div>
+        </div>
+
+    </div>
+    <div id="aplayer" class="aplayer" data-order="random" data-id="20173709" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true" data-volume="0.8"></div>
+    <!-- aplayer -->
+
+
+
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
+    <!-- end_aplayer -->
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script defer src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/kaygb/kaygb@master/layer/layer.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/kaygb/kaygb@master/js/v3.js"></script>
+    <script>
+        //弹出一个页面层
+        $('#kaygb-blog').on('click', function() {
+            layer.open({
+                type: 2,
+                title: 'Kaygb',
+                shadeClose: true,
+                shade: false,
+                maxmin: true, //开启最大化最小化按钮
+                area: ['80%', '100%'],
+                content: '//eas1.cn/'
+            });
+        });
+        $('#kaygb-mail').on('click', function() {
+            layer.open({
+                type: 2,
+                title: 'Mail',
+                shadeClose: true,
+                shade: false,
+                maxmin: true, //开启最大化最小化按钮
+                area: ['80%', '100%'],
+                content: '//mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=javacc@email.cn'
+            });
+        });
+    </script>
+
 </html>
